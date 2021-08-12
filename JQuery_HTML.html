@@ -1,0 +1,76 @@
+<div class="container" style="text-align: left">
+  <!-- Vertical Alignment -->
+  <div class="vertical-align-top responsive-padding">
+    <div
+      data-lump="9021"
+      class="lump col-md-12 col-sm-12 col-xs-12 float-left"
+      id="Lump9021"
+      data-wow-offset="50"
+    >
+      <div class="lump-1col">
+        <p style="text-align: left">
+          <span style="font-size: 24px"
+            ><strong>FAQ&nbsp;</strong></span
+          >
+        </p>
+      </div>
+    </div>
+    <!-- lump -->
+    <div
+      data-lump="9015"
+      class="lump col-md-12 col-sm-12 col-xs-12 float-left"
+      id="Lump9015"
+      data-wow-offset="50"
+      style="text-align: left"
+    >
+      <br />
+      <div class="lump-faq">
+        <div class="section-question pb0" id="question9015">
+          <div class="row vertical-align">
+            <div class="col-md-1 col-xs-2">
+              <div class="button circle">
+                <span class="plus"
+                  ><i class="fa fa-plus" aria-hidden="true"></i
+                ></span>
+                <span class="minus"
+                  ><i class="fa fa-minus" aria-hidden="true"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-md-11 col-xs-10">
+              <p>How many carrots can rabbits eat?</p>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="section-answer pt0">
+          <div class="col-md-1 col-xs-2"></div>
+          <div class="col-md-11 col-xs-10">
+            <p>
+              <span>
+                Carrots contain a high carbs for rabbits which can cause GI status. Probably less than a half cup per week to have a healthy rabbit
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- lump -->
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('div[id^="question"]').click(function () {
+        if ($(this).parent().find(".section-answer").is(":visible")) {
+          $(this).parent().find(".section-answer").slideUp();
+          $(this).removeClass("active");
+        } else {
+          $(this).parent().find(".section-answer").show();
+          $(this).addClass("active");
+        }
+
+        return false;
+      });
+    });
+  </script>
+</div>
